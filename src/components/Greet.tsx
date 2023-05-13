@@ -1,12 +1,13 @@
 import React, { FC } from "react";
 import { GreetProps } from "./GreetProps";
 
-const Greet: FC<GreetProps> = ({ name, messageCount }) => {
+const Greet: FC<GreetProps> = ({ name, messageCount, isLoggedIn }) => {
+  const loggedInMessage = `Welcome ${name} you have ${messageCount} unread messages`;
+  const generalMessage = "Welcome guest, please sign in";
+
   return (
     <div>
-      <h2>
-        Welcome {name}! You have {messageCount} unread messages
-      </h2>
+      <h2>{isLoggedIn ? loggedInMessage : generalMessage}</h2>
     </div>
   );
 };

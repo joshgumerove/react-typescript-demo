@@ -1,6 +1,7 @@
 interface GreetProps {
   name: string;
-  messageCount?: number;
+  messageCount: number;
+  isLoggedIn: boolean;
 }
 
 export type { GreetProps };
