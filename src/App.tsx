@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Greet name="josh" />
+      <Greet name="josh" messageCount={20} />
     </div>
   );
 }
