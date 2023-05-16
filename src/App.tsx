@@ -28,7 +28,7 @@ function App() {
       <Heading>
         <Oscar />
       </Heading>
-      <Button handleClick={() => console.log("Button clicked")} />
+      <Button handleClick={(e, id) => console.log("Button clicked: ", e, id)} />
     </div>
   );
 }

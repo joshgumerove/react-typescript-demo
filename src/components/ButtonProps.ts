@@ -1,5 +1,7 @@
+import { MouseEvent } from "react";
+
 interface ButtonProps {
-  handleClick: () => void;
+  handleClick: (event: MouseEvent<HTMLButtonElement>, id: number) => void;
 }
 
 export type { ButtonProps };
