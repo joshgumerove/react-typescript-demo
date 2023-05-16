@@ -3,6 +3,7 @@ import { Greet } from "./components/Greet";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import "./App.css";
+import { Status } from "./components/Status";
 
 function App() {
   const personName = {
@@ -20,9 +21,9 @@ function App() {
       <Greet name="josh" messageCount={20} isLoggedIn={false} />
       <Person name={personName} />
       <PersonList names={nameList} />
+      <Status status="loading" />
     </div>
   );
 }
 
-// stopped: continue on lesson 5 https://www.youtube.com/watch?v=zLyeWSfTMa8&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=5
 export default App;
