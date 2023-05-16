@@ -10,6 +10,7 @@ import { Input } from "./components/Input";
 import { Container } from "./components/Container";
 import "./App.css";
 import { LoggedIn } from "./components/state/LoggedIn";
+import { User } from "./components/state/User";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -36,6 +37,7 @@ function App() {
       <Button handleClick={(e, id) => console.log("Button clicked: ", e, id)} />
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
       <LoggedIn />
+      <User />
     </div>
   );
 }
