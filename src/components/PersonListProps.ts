@@ -1,10 +1,7 @@
-type Person = {
-  first: string;
-  last: string;
-};
+import { Name } from "./PersonProps";
 
 interface PersonListProps {
-  names: Person[];
+  names: Name[];
 }
 
 export type { PersonListProps };

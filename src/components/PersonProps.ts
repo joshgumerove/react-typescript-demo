@@ -1,8 +1,10 @@
+type Name = {
+  first: string;
+  last: string;
+};
+
 interface PersonProps {
-  name: {
-    first: string;
-    last: string;
-  };
+  name: Name;
 }
 
-export type { PersonProps };
+export type { PersonProps, Name };
