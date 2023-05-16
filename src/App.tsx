@@ -5,6 +5,7 @@ import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
 import { Heading } from "./components/Heading";
 import { Oscar } from "./components/Oscar";
+import { Button } from "./components/Button";
 import "./App.css";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Heading>
         <Oscar />
       </Heading>
+      <Button handleClick={() => console.log("Button clicked")} />
     </div>
   );
 }
