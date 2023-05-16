@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { GreetProps } from "./GreetProps";
 
-const Greet: FC<GreetProps> = ({ name, messageCount, isLoggedIn }) => {
+const Greet: FC<GreetProps> = ({ name, messageCount = 0, isLoggedIn }) => {
   const loggedInMessage = `Welcome ${name} you have ${messageCount} unread messages`;
   const generalMessage = "Welcome guest, please sign in";
 
@@ -13,3 +13,5 @@ const Greet: FC<GreetProps> = ({ name, messageCount, isLoggedIn }) => {
 };
 
 export { Greet };
+
+// provide a default value of zero for message props
