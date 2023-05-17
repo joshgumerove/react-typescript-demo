@@ -11,6 +11,8 @@ import { Container } from "./components/Container";
 import "./App.css";
 import { LoggedIn } from "./components/state/LoggedIn";
 import { User } from "./components/state/User";
+import { Counter } from "./components/state/Counter";
+import { Modal } from "./components/state/Modal";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -38,8 +40,12 @@ function App() {
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
       <LoggedIn />
       <User />
+      <Counter />
+      <Modal />
     </div>
   );
 }
+
+// on lesson 13: https://www.youtube.com/watch?v=bcmes6hUO3U&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=13
 
 export default App;
