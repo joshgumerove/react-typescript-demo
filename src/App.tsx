@@ -46,6 +46,6 @@ function App() {
   );
 }
 
-// on lesson 13: https://www.youtube.com/watch?v=bcmes6hUO3U&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=13
+// on lesson 14: https://www.youtube.com/watch?v=rbtTb9hLYS8&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=14
 
 export default App;
