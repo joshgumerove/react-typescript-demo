@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { useReducer } from "react";
 import { CounterState, CounterAction } from "./Types";
 
-const Counter = () => {
+const Counter: FC = () => {
   const initialState = { count: 0 };
 
   const reducer = (state: CounterState, action: CounterAction) => {
