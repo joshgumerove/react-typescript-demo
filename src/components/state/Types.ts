@@ -2,9 +2,16 @@ interface CounterState {
   count: number;
 }
 
-interface Action {
+interface ResetAction {
+  type: "RESET";
+  payload?: number;
+}
+
+interface UpdateAction {
   type: "INCREMENT" | "DECREMENT";
   payload: number;
 }
 
-export type { CounterState, Action };
+type CounterAction = UpdateAction | ResetAction;
+
+export type { CounterState, CounterAction };
