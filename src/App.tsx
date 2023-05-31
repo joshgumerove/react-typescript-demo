@@ -13,6 +13,8 @@ import { LoggedIn } from "./components/state/LoggedIn";
 import { User } from "./components/state/User";
 import { Counter } from "./components/state/Counter";
 import { Modal } from "./components/state/Modal";
+import { Box } from "./components/context/Box";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -42,6 +44,9 @@ function App() {
       <User />
       <Counter />
       <Modal />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
