@@ -15,6 +15,8 @@ import { Counter } from "./components/state/Counter";
 import { Modal } from "./components/state/Modal";
 import { Box } from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
+import { User as UserTest } from "./components/context/User";
+import { UserContextProvider } from "./components/context/UserContext";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -47,10 +49,13 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+      <UserContextProvider>
+        <UserTest />
+      </UserContextProvider>
     </div>
   );
 }
 
-// on lesson 14: https://www.youtube.com/watch?v=rbtTb9hLYS8&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=14
+// on lesson 16: https://www.youtube.com/watch?v=hA4i1RTbZ2A&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=16
 
 export default App;
