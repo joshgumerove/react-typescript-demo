@@ -17,6 +17,8 @@ import { Box } from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { User as UserTest } from "./components/context/User";
 import { UserContextProvider } from "./components/context/UserContext";
+import { DomRef } from "./components/ref/DomRef";
+import { MutableRef } from "./components/ref/MutableRef";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -52,6 +54,9 @@ function App() {
       <UserContextProvider>
         <UserTest />
       </UserContextProvider>
+      {/* <DomRef /> */}
+      <div>hello world</div>
+      <MutableRef />
     </div>
   );
 }
