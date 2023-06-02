@@ -19,6 +19,7 @@ import { User as UserTest } from "./components/context/User";
 import { UserContextProvider } from "./components/context/UserContext";
 import { DomRef } from "./components/ref/DomRef";
 import { MutableRef } from "./components/ref/MutableRef";
+import { Counter as ClassCounter } from "./components/class/Counter";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -57,10 +58,11 @@ function App() {
       {/* <DomRef /> */}
       <div>hello world</div>
       <MutableRef />
+      <ClassCounter message="helloWorld" />
     </div>
   );
 }
 
-// on lesson 16: https://www.youtube.com/watch?v=hA4i1RTbZ2A&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=16
+// on lesson 17: https://www.youtube.com/watch?v=JOhIMtMxjpU&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=17
 
 export default App;
