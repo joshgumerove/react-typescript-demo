@@ -24,7 +24,9 @@ class Counter extends Component<CounterProps, CounterState> {
     return (
       <div>
         <button onClick={this.handleClick}>Increment</button>
-        {message} {count}
+        <h1>
+          {message} {count}
+        </h1>
       </div>
     );
   }
