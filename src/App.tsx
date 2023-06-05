@@ -20,6 +20,8 @@ import { UserContextProvider } from "./components/context/UserContext";
 import { DomRef } from "./components/ref/DomRef";
 import { MutableRef } from "./components/ref/MutableRef";
 import { Counter as ClassCounter } from "./components/class/Counter";
+import { Profile } from "./components/auth/Profile";
+import { Private } from "./components/auth/Private";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -59,10 +61,11 @@ function App() {
       <div>hello world</div>
       <MutableRef />
       <ClassCounter message="helloWorld" />
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
 
-// on lesson 17: https://www.youtube.com/watch?v=JOhIMtMxjpU&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=17
+// on lesson 18: https://www.youtube.com/watch?v=qvdnTfyv7y8&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=18
 
 export default App;
