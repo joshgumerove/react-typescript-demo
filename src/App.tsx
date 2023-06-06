@@ -22,6 +22,7 @@ import { MutableRef } from "./components/ref/MutableRef";
 import { Counter as ClassCounter } from "./components/class/Counter";
 import { Profile } from "./components/auth/Profile";
 import { Private } from "./components/auth/Private";
+import { List } from "./components/generics/List";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -62,10 +63,22 @@ function App() {
       <MutableRef />
       <ClassCounter message="helloWorld" />
       <Private isLoggedIn={true} component={Profile} />
+      <List
+        items={["Batman", "Superman", "Robin Hood"]}
+        onClick={(item) => console.log(item)}
+      />
+      <List items={[5, 4, 3]} onClick={(item) => console.log(item)} />
+      {/* <List
+        items={[
+          { first: "Bruce", last: "Wayne" },
+          { first: "Clark", last: "Kent" },
+        ]}
+        onClick={(item) => console.log(item)}
+      /> */}
     </div>
   );
 }
 
-// on lesson 18: https://www.youtube.com/watch?v=qvdnTfyv7y8&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=18
+// on lesson 20: https://www.youtube.com/watch?v=yqn9Fkv7f2M&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=20
 
 export default App;
