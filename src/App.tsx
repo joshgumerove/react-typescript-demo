@@ -23,6 +23,7 @@ import { Counter as ClassCounter } from "./components/class/Counter";
 import { Profile } from "./components/auth/Profile";
 import { Private } from "./components/auth/Private";
 import { List } from "./components/generics/List";
+import { RandomNumber } from "./components/restriction/RandomNumber";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -75,6 +76,8 @@ function App() {
         ]}
         onClick={(item) => console.log(item)}
       /> */}
+      <RandomNumber value={40} isPositive />
+      <RandomNumber value={-10} isNegative />
     </div>
   );
 }
