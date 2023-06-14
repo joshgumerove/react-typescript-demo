@@ -24,6 +24,7 @@ import { Profile } from "./components/auth/Profile";
 import { Private } from "./components/auth/Private";
 import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restriction/RandomNumber";
+import { Toast } from "./components/templateLiterals/Toast";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -78,10 +79,11 @@ function App() {
       /> */}
       <RandomNumber value={40} isPositive />
       <RandomNumber value={-10} isNegative />
+      <Toast position="center" />
     </div>
   );
 }
 
-// on lesson 20: https://www.youtube.com/watch?v=yqn9Fkv7f2M&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=20
+// on lesson 21: https://www.youtube.com/watch?v=jrnIh0RPeCw&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=21
 
 export default App;
