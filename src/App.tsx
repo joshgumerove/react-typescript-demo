@@ -25,6 +25,7 @@ import { Private } from "./components/auth/Private";
 import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restriction/RandomNumber";
 import { Toast } from "./components/templateLiterals/Toast";
+import { CustomButton } from "./components/html/Button";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -80,10 +81,16 @@ function App() {
       <RandomNumber value={40} isPositive />
       <RandomNumber value={-10} isNegative />
       <Toast position="center" />
+      <CustomButton
+        variant="primary"
+        onClick={() => console.log("this is a cool trick")}
+      >
+        Primary Button
+      </CustomButton>
     </div>
   );
 }
 
-// on lesson 21: https://www.youtube.com/watch?v=jrnIh0RPeCw&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=21
+// on lesson 23: https://www.youtube.com/watch?v=AHadSDk7i6s&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=23
 
 export default App;
