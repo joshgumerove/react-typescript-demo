@@ -27,6 +27,7 @@ import { RandomNumber } from "./components/restriction/RandomNumber";
 import { Toast } from "./components/templateLiterals/Toast";
 import { CustomButton } from "./components/html/Button";
 import { CustomComponent } from "./components/html/CustomComponent";
+import { Text } from "./components/polymorphic/Text";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -93,6 +94,15 @@ function App() {
         name={"Josh Gumerove"}
         messageCount={100}
       />
+      <Text as="h1" size="lg">
+        Heading
+      </Text>
+      <Text as="p" size="md">
+        Paragraph
+      </Text>
+      <Text as="label" size="sm" color="secondary" htmlFor="someId">
+        Label
+      </Text>
     </div>
   );
 }

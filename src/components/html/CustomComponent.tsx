@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { Greet } from "../Greet";
 
 const CustomComponent = (props: React.ComponentProps<typeof Greet>) => {
