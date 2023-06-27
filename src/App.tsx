@@ -26,6 +26,7 @@ import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restriction/RandomNumber";
 import { Toast } from "./components/templateLiterals/Toast";
 import { CustomButton } from "./components/html/Button";
+import { CustomComponent } from "./components/html/CustomComponent";
 
 function App() {
   const [value, setValue] = useState<string>("");
@@ -87,6 +88,11 @@ function App() {
       >
         Primary Button
       </CustomButton>
+      <CustomComponent
+        isLoggedIn={true}
+        name={"Josh Gumerove"}
+        messageCount={100}
+      />
     </div>
   );
 }
